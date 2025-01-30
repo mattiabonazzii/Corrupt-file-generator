@@ -10,13 +10,27 @@
 
 <body>
     <h1>Use this software at your own discretion. I am not liable for your actions.</h1>
-    <form action="">
-        <label for="filename">File name</label>
-        <input type="text" class="input" id="filename" maxlength="256">
-        <br><br><br>
-        <label for="extension">Extension</label>
-        <input type="text" class="input" id="extension" maxlength="4">
-    </form>
+    <label for="filename">File name</label>
+    <input type="text" class="input" id="filename" maxlength="256">
+    <br><br><br>
+    <label for="extension">Extension</label>
+    <input type="text" class="input" id="extension" maxlength="4">
+    <br><br><br>
+    <label for="size">Size (kb)</label>
+    <input type="number" class="input" id="size" min="0" max="1024">
+    <br><br><br>
+    <button id="create">Create</button>
 </body>
+<script>
+    document.getElementById("create").addEventListener("click", function(){
+        let filename = document.getElementById("filename").value;
+        let extension = document.getElementById("extension").value;
+        let size = parseInt(document.getElementById("size").value);
+        if(size > 1024) size = 1024;
+        var data = Math.random() * 1024 * size
+
+        var datablob = new Blob
+    });
+</script>
 
 </html>
