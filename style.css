@@ -84,3 +84,12 @@ br {
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
+
+#title {
+  font-size: 22px;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
